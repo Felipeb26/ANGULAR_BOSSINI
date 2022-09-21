@@ -1,0 +1,22 @@
+<div class="container">
+  <form>
+    <div class="form-group">
+      <label for="nomeInput">Nome</label>
+      <input
+        type="nome"
+        class="form-control"
+        id="nomeInput"
+        placeholder="Digite um nome"
+        (input)="alterarNome($event)"
+      />
+    </div>
+    <button
+      type="button"
+      class="btn btn-primary btn-block"
+      (click)="adicionar()"
+    >
+      Adicionar
+    </button>
+    <h4>{{nome}}</h4>
+  </form>
+</div>
